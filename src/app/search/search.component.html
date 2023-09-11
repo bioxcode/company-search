@@ -1,0 +1,21 @@
+<form class="form" [formGroup]="searchForm" (ngSubmit)="onSearch()">
+    <div class="flex flex-col items-center gap-2">
+      <img src="assets/256x256.png" alt="CompanySearch" class="max-w-[64px]">
+      <h1 class="text-2xl">
+        Company<span class="opacity-50">Search</span>
+      </h1>
+    </div>
+    <input
+      type="text"
+      formControlName="searchString"
+      id="search"
+      class="input"
+      placeholder="Company Name or Number"
+      autocomplete="off"
+    />
+    <button
+      type="submit"
+      class="button">
+      Search
+    </button>
+</form>

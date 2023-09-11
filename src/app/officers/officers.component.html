@@ -1,0 +1,9 @@
+<div class="officers">
+  <h1 class="mb-2">{{companyDetails?.title}} - Officers</h1>
+  <span class="font-bold">Company number:</span>
+  <p class="mb-4">{{companyNumber}}</p>
+  <div class="result" *ngFor="let officer of data?.items">
+    <h2 class="text-black font-bold">{{officer.name}}</h2>
+    <p>{{officer.officer_role}}</p>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="results">
+  <div class="flex flex-col items-center gap-2">
+    <img src="assets/256x256.png" alt="CompanySearch" class="max-w-[64px]">
+    <h1>Search Results</h1>
+  </div>
+  <h2>- <b class="text-slate-500">{{searchString}}</b> -</h2>
+  <hr class="border-slate-300 max-w-[50px] my-4 border-2"/>
+  <div class="result" *ngFor="let company of data?.items">
+    <a routerLink="/companies/{{company.company_number}}">
+      {{company.title}}
+    </a>
+    <p>{{company.description}}</p>
+    <p>{{company.address_snippet}}</p>
+  </div>
+</div>

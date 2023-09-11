@@ -1,0 +1,16 @@
+<div class="company">
+  <h1 class="mb-2">{{data?.title}}</h1>
+    <span class="font-bold">Company number:</span>
+    <p class="mb-4">{{data?.company_number}}</p>
+    <span class="font-bold">Registered office address:</span>
+    <p class="mb-4">{{data?.address_snippet}}</p>
+    <span class="font-bold">Company status:</span>
+    <p class="mb-4">{{data?.company_status}}</p>
+    <span class="font-bold">Company type:</span>
+    <p class="mb-4">{{data?.company_type}}</p>
+    <span class="font-bold">Incorporated on:</span>
+    <p class="mb-4">{{data?.date_of_creation}}</p>
+    <a routerLink="/companies/{{data?.company_number}}/officers">
+      List Officers
+    </a>
+</div>
